@@ -1,0 +1,209 @@
+body {
+  background-color: #2d2d2d;
+  /* color: #ffffff; */
+}
+
+.navbar-brand {
+  width: 1000px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.navbar-collapse {
+  max-width: 600px; /* Adjust the value as needed */
+  /* Alternatively, you can use width property for a fixed width */
+  /* width: 250px; */
+}
+
+.nav-circle {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20%;
+  width: 50px; /* Set the desired radius size */
+  height: 50px; /* Set the desired radius size */
+  border: 2px solid black; /* Add a black border to the image */
+}
+
+.nav-circle img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+  object-fit: cover; /* Preserve aspect ratio while covering the container */
+   /* Add a black border to the image */
+}
+
+  #pointmap-div{
+    height: 610px;
+  }
+  #error-div{
+    height: 610px;
+  }
+  #legend-div {
+    width: 180px;
+    height: 720px;
+  }
+  #choropleth-div{
+    width:620px;
+    height:720px;
+  }
+  #radial-div{
+    width:615px;
+    height:720px;
+  }
+  #timeseries-div{
+    width:805px;
+    
+  }
+  #dateDropdown {
+    width: 200px; 
+}
+
+
+  #svg_lollipop {
+    height: 370px;
+    width: 1000px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+  
+#datepicker {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  outline: none;
+}
+#start,
+#end {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  outline: none;
+}
+#start:focus,
+#end:focus {
+  border-color: #007bff; /* Change to your desired focus color */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Change to your desired focus shadow */
+}
+button {
+  padding: 5px 5px;
+  font-size: 16px;
+  background-color: #FF9999; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.highlighted {
+  opacity: 1 !important; /* Ensure highlighted line is fully opaque */
+}
+
+.unhighlighted {
+  opacity: 0.3;
+}
+.tooltip {
+  position: absolute;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 1px solid steelblue;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.form-inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; 
+}
+
+.form-inline input,
+.form-inline #play_button_chart1,
+.form-inline #play-pause-button {
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+
+#play-pause-button {
+  display: inline-block;
+  white-space: nowrap;
+  width: 80px;
+  height: 50px;
+  font-size: 16px;
+  /*margin: 5px 0;  Adjusted margin to ensure the same spacing on top and bottom */
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-left:80px; */
+  position: relative;
+  
+  top: 10%;
+  transform: translateX(100%);
+  transform: translateY(-15%);
+  margin-top: -100px;
+  margin-bottom: 20px;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000;
+  width:fit-content;
+  height:fit-content;
+  border: 1px solid #000; /* Black border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow with black color and 0.5 opacity */
+  border-radius: 5px; /* Adjust the value for the desired level of rounding */
+}
+
+.close-button {
+  margin-top: 10px;
+}
+
+.blurred-container {
+  filter: blur(2px)!important;
+}
+
+#ts_dropdown{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  font-size: 9px;
+}
+.input-group {
+  height: 40px; 
+}
+.checkbox-group {
+  display: flex;
+}
+
+.checkbox-label {
+  margin-right: 15px;
+  /* margin-bottom: 10px; */
+}
+#popupSensorId{
+  font-size: 13px;
+}
